@@ -16,7 +16,7 @@ const closeLibBtn = document.querySelector('.close-library');
 const savePaletteBtn = document.querySelector('.submit-save');
 const selectPaletteUI = document.querySelector('select')
 const submitSelectionUI = document.querySelector('.submit-selection');
-console.log(submitSelectionUI);
+
 
 // array will be used for colorizing sliders.
 let baseColors;
@@ -343,7 +343,7 @@ function selectPalettes() {
         })
     }
     storedPalette = loadStorage();
-    console.log(storedPalette);
+  
     storedPalette.forEach((element, index) => {
         const option = document.createElement('option');
         option.innerText = element.name;
